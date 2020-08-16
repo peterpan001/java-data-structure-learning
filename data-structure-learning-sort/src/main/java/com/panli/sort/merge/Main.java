@@ -35,7 +35,7 @@ public class Main {
     }
 
     // 将排好序的左右两半合并
-    public void mergeArray(int[] nums, int low, int middle, int high) {
+    private void mergeArray(int[] nums, int low, int middle, int high) {
 
         // 深克隆数组
         int[] copy = nums.clone();
