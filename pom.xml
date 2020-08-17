@@ -12,6 +12,8 @@
         <module>data-structure-learning-sort</module>
         <module>data-structure-learning-search</module>
         <module>data-structure-learning-tree</module>
+        <module>data-structure-learning-stack</module>
+        <module>data-structure-learning-queue</module>
     </modules>
 
 
