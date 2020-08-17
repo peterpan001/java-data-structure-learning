@@ -26,6 +26,7 @@ public class Main {
         return (nLeft > nRight) ? nLeft + 1 : nRight + 1;
     }
 
+    // 二叉树非递归求解树的深度
     public static int treeDepthNoRecursion(BinaryTree pRoot) {
         if (pRoot == null) {
             return 0;
