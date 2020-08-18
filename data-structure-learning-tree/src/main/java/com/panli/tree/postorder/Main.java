@@ -15,17 +15,17 @@ public class Main {
     }
 
     // 后序递归遍历二叉树
-    public static void postOrderTreeRecursion(BinaryTree pRoot) {
+    public static void postOrderTreeRecur(BinaryTree pRoot) {
         if (pRoot == null) {
             return;
         }
-        postOrderTreeRecursion(pRoot.getLeftNode()); // 左
-        postOrderTreeRecursion(pRoot.getRightNode()); // 右
+        postOrderTreeRecur(pRoot.getLeftNode()); // 左
+        postOrderTreeRecur(pRoot.getRightNode()); // 右
         System.out.println(pRoot.getData()); // 根
     }
 
     // 后序非递归遍历二叉树，借助于两个栈实现
-    public static void postOrderTreeNoRecursion(BinaryTree pRoot) {
+    public static void postOrderTreeNoRecur(BinaryTree pRoot) {
         if (pRoot == null) {
             return;
         }

@@ -17,17 +17,17 @@ public class Main {
     }
 
     // 二叉树递归求解树的深度
-    public static int treeDepthRecursion(BinaryTree pRoot) {
+    public static int treeDepthRecur(BinaryTree pRoot) {
         if (pRoot == null) {
             return 0;
         }
-        int nLeft = treeDepthRecursion(pRoot.getLeftNode());
-        int nRight = treeDepthRecursion(pRoot.getRightNode());
+        int nLeft = treeDepthRecur(pRoot.getLeftNode());
+        int nRight = treeDepthRecur(pRoot.getRightNode());
         return (nLeft > nRight) ? nLeft + 1 : nRight + 1;
     }
 
     // 二叉树非递归求解树的深度
-    public static int treeDepthNoRecursion(BinaryTree pRoot) {
+    public static int treeDepthNoRecur(BinaryTree pRoot) {
         if (pRoot == null) {
             return 0;
         }

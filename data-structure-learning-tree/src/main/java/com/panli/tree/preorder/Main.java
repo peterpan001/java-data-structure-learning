@@ -16,17 +16,17 @@ public class Main {
     }
 
     // 前序递归遍历二叉树
-    public static void preOrderTreeRecursion(BinaryTree pRoot) {
+    public static void preOrderTreeRecur(BinaryTree pRoot) {
         if (pRoot == null) {
             return;
         }
         System.out.println(pRoot.getData());//根
-        preOrderTreeRecursion(pRoot.getLeftNode());//左
-        preOrderTreeRecursion(pRoot.getRightNode());//右
+        preOrderTreeRecur(pRoot.getLeftNode());//左
+        preOrderTreeRecur(pRoot.getRightNode());//右
     }
 
     // 前序非递归遍历二叉树，借助于栈，栈：先进后出
-    public static void preOrderTreeNoRecursion(BinaryTree pRoot) {
+    public static void preOrderTreeNoRecur(BinaryTree pRoot) {
         if (pRoot == null) {
             return;
         }
