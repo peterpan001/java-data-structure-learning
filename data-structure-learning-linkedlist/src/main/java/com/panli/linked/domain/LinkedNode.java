@@ -8,4 +8,13 @@ package com.panli.linked.domain;
 public class LinkedNode {
     public int data;
     public LinkedNode next;
+
+    public LinkedNode(int data) {
+        this.data = data;
+    }
+
+    public LinkedNode(int data, LinkedNode next) {
+        this.data = data;
+        this.next = next;
+    }
 }
