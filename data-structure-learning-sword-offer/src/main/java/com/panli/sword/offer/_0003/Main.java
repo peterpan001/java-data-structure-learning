@@ -19,6 +19,6 @@ public class Main {
             }
             sets.add(nums[i]);
         }
-        return -1;
+        return -1; // 没找到返回-1
     }
 }
