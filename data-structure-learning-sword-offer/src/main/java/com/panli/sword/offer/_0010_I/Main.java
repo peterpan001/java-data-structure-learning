@@ -1,4 +1,4 @@
-package com.panli.sword.offer._0010;
+package com.panli.sword.offer._0010_I;
 
 /**
  * @author lipan
@@ -32,19 +32,19 @@ public class Main {
      * @return
      */
     public int fib_2(int n) {
-        if (n == 0) {
+        if (n == 0) { // n==0，返回0
             return 0;
         }
-        if (n == 1) {
+        if (n == 1) { // n==1，返回1
             return 1;
         }
         int first = 0, second = 1;
-        while (n > 0) {
+        while (n > 1) { // n>1，fib(n) = fib(n-1)+fib(n-2)
             int tmp = first + second;
             first = second % 1000000007;
             second = tmp % 1000000007;
             n--;
         }
-        return first;
+        return second;
     }
 }
