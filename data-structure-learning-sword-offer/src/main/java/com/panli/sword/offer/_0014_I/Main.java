@@ -3,7 +3,7 @@ package com.panli.sword.offer._0014_I;
 /**
  * @author lipan
  * @date 2020-08-24
- * @desc 剪绳子
+ * @desc 剪绳子-I
  */
 public class Main {
 
@@ -78,5 +78,26 @@ public class Main {
             res[i] = res[i - 3] * 3;
         }
         return res[n];
+    }
+
+    /**
+     * 和方法一类似
+     *
+     * @param n
+     * @return
+     */
+    public int cuttingRope_3(int n) {
+        if (n == 2) {
+            return 1;
+        }
+        if (n == 3) {
+            return 2;
+        }
+        int res = 1;
+        while (n > 4) {
+            res = res * 3;
+            n = n - 3;
+        }
+        return n * res;
     }
 }
