@@ -10,7 +10,7 @@ import java.util.Queue;
 /**
  * @author lipan
  * @date 2020-08-31
- * @desc 从上到下打印二叉树
+ * @desc 从上到下打印二叉树 I
  */
 public class Main {
 
