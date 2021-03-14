@@ -1,4 +1,4 @@
-package com.panli.leetcode._0001;
+package com.panli.leetcode.easy._0001;
 
 import java.util.HashMap;
 

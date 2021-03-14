@@ -1,4 +1,4 @@
-package com.panli.leetcode._0020;
+package com.panli.leetcode.easy._0020;
 
 /**
  * @author lipan

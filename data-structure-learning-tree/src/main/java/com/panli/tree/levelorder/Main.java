@@ -16,6 +16,11 @@ public class Main {
 
     }
 
+    /**
+     * 层序遍历二叉树
+     *
+     * @param pRoot
+     */
     public static void levelOrderTree(BinaryTree pRoot) {
         if (pRoot == null) {
             return;

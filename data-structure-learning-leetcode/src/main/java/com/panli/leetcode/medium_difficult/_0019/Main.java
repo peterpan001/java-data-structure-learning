@@ -1,4 +1,4 @@
-package com.panli.leetcode._0019;
+package com.panli.leetcode.medium_difficult._0019;
 
 import com.panli.leetcode.domain.ListNode;
 
