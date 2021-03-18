@@ -1,4 +1,4 @@
-package com.panli.interview._16_25;
+package com.panli.interview.medium._16_25;
 
 import java.util.LinkedHashMap;
 
