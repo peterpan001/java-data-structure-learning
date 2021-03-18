@@ -15,6 +15,8 @@ public class Solution {
     /**
      * 复制带随机指针的链表
      *
+     * 第一遍复制节点的val ，next 和 random 暂时为空，并将源节点和克隆节点形成映射存放在一个 HashMap 中
+     *
      * @param head
      * @return
      */
