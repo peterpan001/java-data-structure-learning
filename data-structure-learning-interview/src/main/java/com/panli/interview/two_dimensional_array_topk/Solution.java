@@ -52,12 +52,12 @@ public class Solution {
 
     public static void main(String[] args) {
         int[][] arr = {{4, 1, 8, 9}, {5, 2, 7, 8}, {3, 3, 2}};
-        int[] maxArr = findTopMaxK(arr, 3);
+        int[] maxArr = findTopMaxK(arr, 1);
         for (int i = 0; i < maxArr.length; i++) {
             System.out.println(maxArr[i]);
         }
         System.out.println("-------------------");
-        int[] minArr = findTopMinK(arr, 3);
+        int[] minArr = findTopMinK(arr, 1);
         for (int i = 0; i < minArr.length; i++) {
             System.out.println(minArr[i]);
         }
