@@ -1,4 +1,4 @@
-package com.panli.leetcode.medium_difficult._0102;
+package com.panli.leetcode.medium._0102;
 
 import com.panli.leetcode.domain.TreeNode;
 
