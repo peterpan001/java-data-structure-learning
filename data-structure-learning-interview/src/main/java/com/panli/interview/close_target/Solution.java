@@ -1,5 +1,6 @@
 package com.panli.interview.close_target;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -34,4 +35,32 @@ public class Solution {
         return res;
     }
 
+    private static List<Integer> getLatestNums1(int[] arrays, int target, int num) {
+        if (arrays == null || num <= 0) {
+            return null;
+        }
+        int leftIdx = 0, rightIdx = arrays.length - 1;
+        int moveStep = arrays.length - num;
+        while (moveStep > 0) {
+            if (target - arrays[leftIdx] > arrays[rightIdx] - target) {
+                leftIdx++;
+            } else {
+                rightIdx--;
+            }
+            moveStep--;
+        }
+        List<Integer> list = new ArrayList<>();
+        for (int i = leftIdx; i < leftIdx + num; i++) {
+            list.add(arrays[i]);
+        }
+        return list;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+        List<Integer> res = getLatestNums1(arr, 4, 4);
+        for(Integer i : res){
+            System.out.println(i);
+        }
+    }
 }
