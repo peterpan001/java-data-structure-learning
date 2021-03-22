@@ -16,12 +16,17 @@ public class MedianFinder {
     public MedianFinder() {
         a = new PriorityQueue<Integer>(new Comparator<Integer>() {
             public int compare(Integer i1, Integer i2) {
-                return i1 - i2;
+                return i2 - i1;
             }
         }); // 大顶堆，存储较小的一部分
         b = new PriorityQueue<Integer>(); // 小顶堆，存储较大的一部分
     }
 
+    /**
+     * 当 a 和 b 队列元素相等时，优先保证元素落入 a 队列
+     * 当 a 和 b 队列元素不相等时，说明 a 队列元素多，则让元素进入 b 队列
+     * @param num
+     */
     public void addNum(int num) {
         if (a.size() != b.size()) {
             a.add(num);
@@ -33,6 +38,6 @@ public class MedianFinder {
     }
 
     public double findMedian() {
-        return a.size() != b.size() ? a.peek() : (a.peek() + b.peek()) / 2d;
+        return a.size() != b.size() ? a.peek() : (a.peek() + b.peek()) / 2.0;
     }
 }
