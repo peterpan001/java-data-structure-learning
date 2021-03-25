@@ -21,6 +21,7 @@
         <module>data-structure-learning-interview-questions</module>
         <module>thread-producer-consumer</module>
         <module>java-design-pattern</module>
+        <module>java-common-utils</module>
     </modules>
 
 
