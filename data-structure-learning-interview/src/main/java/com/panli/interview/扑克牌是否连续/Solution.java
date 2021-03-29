@@ -1,4 +1,4 @@
-package com.panli.interview.cards_in_a_row;
+package com.panli.interview.扑克牌是否连续;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.panli.interview.close_target;
+package com.panli.interview.一维数组最接近target的k个数;
 
 import java.util.ArrayList;
 import java.util.Arrays;

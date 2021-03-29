@@ -1,4 +1,4 @@
-package com.panli.interview.two_dimensional_array_topk;
+package com.panli.interview.二维数组找TopK元素;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

@@ -1,4 +1,4 @@
-package com.panli.interview.array_find_sum_k;
+package com.panli.interview.一维数组找出和为target的元素对;
 
 import com.alibaba.fastjson.JSONArray;
 

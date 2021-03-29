@@ -1,4 +1,4 @@
-package com.panli.interview.merge_array;
+package com.panli.interview.两个有序数组合并;
 
 /**
  * a[2,3,10,25,60]、b[1,3,9,11,26,63]两个有序数组，编写代码将两个数组合并为一个整体有序的数组

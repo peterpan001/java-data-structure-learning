@@ -1,4 +1,4 @@
-package com.panli.interview.redpackage;
+package com.panli.interview.微信红包;
 
 /**
  * 微信红包算法

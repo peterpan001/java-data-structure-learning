@@ -1,4 +1,4 @@
-package com.panli.interview.redpackage;
+package com.panli.interview.微信红包;
 
 import java.util.ArrayList;
 import java.util.List;
