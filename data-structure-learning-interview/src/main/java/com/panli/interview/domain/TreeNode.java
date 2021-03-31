@@ -1,4 +1,4 @@
-package com.panli.interview.二叉树遍历;
+package com.panli.interview.domain;
 
 /**
  * @author lipan
