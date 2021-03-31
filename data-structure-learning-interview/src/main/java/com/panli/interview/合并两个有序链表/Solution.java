@@ -1,5 +1,7 @@
 package com.panli.interview.合并两个有序链表;
 
+import com.panli.interview.domain.ListNode;
+
 /**
  * 合并两个有序链表
  *
