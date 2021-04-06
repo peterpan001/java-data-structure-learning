@@ -18,13 +18,13 @@ public class Solution {
         if (nums == null) { // 如果数组为空，直接返回
             return 0;
         }
-        int i = 0; // 定义起始位置：0（不同数组元素的下标指针）
+        int slow = 1; // 定义起始位置：1
         for (int j = 1; j < nums.length; j++) { // 遍历数组
-            if (nums[j] != nums[i]) { // 如果nums[j] != nums[i]，将nums[j] 元素赋值给nums[i+1];
-                i++;
-                nums[i] = nums[j];
+            if (nums[slow - 1] != nums[j]) { // 如果nums[slow-1] != nums[j]，将nums[j] 元素赋值给nums[slow];
+                nums[slow] = nums[j];
+                slow++;
             }
         }
-        return i + 1;
+        return slow;
     }
 }
