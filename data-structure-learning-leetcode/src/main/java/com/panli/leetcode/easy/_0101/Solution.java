@@ -1,4 +1,4 @@
-package com.panli.leetcode.easy._101;
+package com.panli.leetcode.easy._0101;
 
 import com.panli.leetcode.domain.TreeNode;
 
