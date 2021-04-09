@@ -28,7 +28,7 @@ public class Main {
     }
 
     private boolean dfs(char[][] board, char[] words, int i, int j, int index) {
-        if (i < 0 || i > board.length || j < 0 || j > board[0].length || board[i][j] != words[index]) { // 临界条件判断
+        if (i < 0 || i > board.length - 1 || j < 0 || j > board[0].length - 1 || board[i][j] != words[index]) { // 临界条件判断
             return false;
         }
         if (index == words.length - 1) { // 如果index等于words长度，说明寻找到了路径
