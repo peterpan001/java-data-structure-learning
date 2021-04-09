@@ -13,10 +13,11 @@ public class Solution {
      * @return
      */
     public int findMin(int[] nums) {
-        if (nums == null) { // 如果数组为空，直接返回-1
+        int len = nums.length;
+        if (len == 0) {
             return -1;
         }
-        int leftIdx = 0, rightIdx = nums.length - 1; // 利用二分法
+        int leftIdx = 0, rightIdx = len - 1; // 利用二分法
         while (leftIdx < rightIdx) {
             int midIdx = (leftIdx + rightIdx) / 2;  // 取中间元素
             if (nums[midIdx] > nums[rightIdx]) { // 如果中间元素值大于最右边元素值，则左指针右移
