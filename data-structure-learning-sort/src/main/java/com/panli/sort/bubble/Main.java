@@ -10,11 +10,12 @@ public class Main {
     public static void main(String[] args) {
         int[] nums = {1, 4, 5, 2, 6, 3, 9, 8, 7};
 
-        new Main().bubbleSort(nums);
+        bubbleSort(nums);
 
         for (int tmp : nums) {
-            System.out.println(tmp);
+            System.out.print(tmp + " ");
         }
+        System.out.println();
     }
 
     /**
@@ -22,15 +23,12 @@ public class Main {
      *
      * @param nums
      */
-    public void bubbleSort(int[] nums) {
-
+    public static void bubbleSort(int[] nums) {
         if (nums.length <= 1) {
             return;
         }
-
         // 定义boolean变量，标记每轮遍历中是否发生了数组元素交换
         boolean hasChange = true;
-
         // 每轮遍历开始都将hasChange置为false
         for (int i = 0; i < nums.length - 1 && hasChange; i++) {
             hasChange = false;
@@ -52,7 +50,7 @@ public class Main {
      * @param i
      * @param j
      */
-    private void swap(int nums[], int i, int j) {
+    private static void swap(int nums[], int i, int j) {
         int tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;

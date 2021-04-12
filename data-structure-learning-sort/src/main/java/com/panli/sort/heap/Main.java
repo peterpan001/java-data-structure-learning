@@ -9,13 +9,14 @@ public class Main {
 
     public static void main(String[] args) {
         int nums[] = {1, 4, 6, 5, 2, 7, 8, 3};
-        new Main().heapSort(nums);
+        heapSort(nums);
         for (int tmp : nums) {
-            System.out.println(tmp);
+            System.out.print(tmp + " ");
         }
+        System.out.println();
     }
 
-    public void heapSort(int nums[]) {
+    public static void heapSort(int nums[]) {
         if (nums == null || nums.length < 2) {
             return;
         }
@@ -32,7 +33,7 @@ public class Main {
         }
     }
 
-    private void heapify(int nums[], int root, int size) {
+    private static void heapify(int nums[], int root, int size) {
         int leftIdx = root * 2 + 1; // 取最小的左节点
         while (leftIdx < size) { // 保证数组不越界
             // 从左右自节点中获取最大的孩子节点下标
@@ -48,14 +49,14 @@ public class Main {
     }
 
     // 调整大根堆,不断向上循环,调整大根堆（根节点与叶子节点关系：左子节点 = 2*根 + 1；右子节点 = 2 * 根 + 2）
-    private void heapInsert(int nums[], int idx) {
+    private static void heapInsert(int nums[], int idx) {
         while (nums[idx] > nums[(idx - 1) / 2]) {
             swap(nums, idx, (idx - 1) / 2);
             idx = (idx - 1) / 2;
         }
     }
 
-    private void swap(int nums[], int i, int j) {
+    private static void swap(int nums[], int i, int j) {
         int tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;

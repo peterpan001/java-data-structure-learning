@@ -8,13 +8,14 @@ package com.panli.sort.merge;
 public class Main {
     public static void main(String[] args) {
         int[] nums = {1, 4, 6, 5, 2, 3, 8, 7};
-        new Main().mergeSort(nums, 0, nums.length - 1);
+        mergeSort(nums, 0, nums.length - 1);
         for (int tmp : nums) {
-            System.out.println(tmp);
+            System.out.print(tmp + " ");
         }
+        System.out.println();
     }
 
-    public void mergeSort(int[] nums, int low, int high) {
+    public static void mergeSort(int[] nums, int low, int high) {
 
         // 判断是否只剩余一个元素
         if (low >= high) {
@@ -35,7 +36,7 @@ public class Main {
     }
 
     // 将排好序的左右两半合并
-    private void mergeArray(int[] nums, int low, int middle, int high) {
+    private static void mergeArray(int[] nums, int low, int middle, int high) {
 
         // 深克隆数组
         int[] copy = nums.clone();

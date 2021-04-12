@@ -8,13 +8,13 @@ package com.panli.sort.select;
 public class Main {
     public static void main(String[] args) {
         int[] nums = {1, 4, 6, 5, 2, 3, 8, 7};
-        new Main().simpleSelectSort(nums);
+        simpleSelectSort(nums);
         for (int tmp : nums) {
             System.out.println(tmp);
         }
     }
 
-    public void simpleSelectSort(int nums[]) {
+    public static void simpleSelectSort(int nums[]) {
         for (int i = 0; i < nums.length; i++) {
             int minIdx = i; //每次都假设起始元素为最小值
             for (int j = i + 1; j < nums.length; j++) { //从第i+1个元素中寻找最小的元素
@@ -26,7 +26,7 @@ public class Main {
         }
     }
 
-    private void swap(int nums[], int i, int j) {
+    private static void swap(int nums[], int i, int j) {
         int tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;

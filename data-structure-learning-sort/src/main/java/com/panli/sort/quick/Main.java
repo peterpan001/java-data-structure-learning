@@ -9,10 +9,11 @@ public class Main {
 
     public static void main(String[] args) {
         int[] nums = {1, 4, 6, 2, 5, 3, 8, 7};
-        new Main().quickSort(nums, 0, nums.length - 1);
+        quickSort(nums, 0, nums.length - 1);
         for (int tmp : nums) {
-            System.out.println(tmp);
+            System.out.print(tmp + " ");
         }
+        System.out.println();
     }
 
     /**
@@ -22,7 +23,7 @@ public class Main {
      * @param low
      * @param high
      */
-    public void quickSort(int nums[], int low, int high) {
+    public static void quickSort(int nums[], int low, int high) {
         if (low > high) { // 如果low大于high截止
             return;
         }
@@ -31,7 +32,7 @@ public class Main {
         quickSort(nums, p + 1, high); //对右侧子数组进行递归排序
     }
 
-    private int partition(int nums[], int low, int high) {
+    private static int partition(int nums[], int low, int high) {
         int pivotKey = nums[low]; //用子表的第一个记录作为枢轴记录
         while (low < high) { //从表的两端交替向中间扫描
             while (low < high && nums[high] > pivotKey) {// 从数组后面向前扫描，将比pivotkey值小的交换到低端
@@ -46,7 +47,7 @@ public class Main {
         return low;
     }
 
-    private void swap(int nums[], int i, int j) {
+    private static void swap(int nums[], int i, int j) {
         int tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;

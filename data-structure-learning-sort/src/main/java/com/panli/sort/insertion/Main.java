@@ -9,13 +9,14 @@ public class Main {
 
     public static void main(String[] args) {
         int[] nums = {1, 4, 3, 6, 2, 8, 7};
-        new Main().insertionSort(nums);
+        insertionSort(nums);
         for (int tmp : nums) {
-            System.out.println(tmp);
+            System.out.print(tmp + " ");
         }
+        System.out.println();
     }
 
-    public void insertionSort(int[] nums) {
+    public static void insertionSort(int[] nums) {
         if (nums.length <= 1) {
             return;
         }
