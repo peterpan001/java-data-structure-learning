@@ -35,11 +35,11 @@ public class Main {
         while (!stack1.isEmpty()) {
             BinaryTree node = stack1.pop(); //根
             stack2.push(node);
-            if (node.getRightNode() != null) { // 右
-                stack1.push(node.getRightNode());
-            }
             if (node.getLeftNode() != null) { // 左
                 stack1.push(node.getLeftNode());
+            }
+            if (node.getRightNode() != null) { // 右
+                stack1.push(node.getRightNode());
             }
         }
         while (!stack2.isEmpty()) {
